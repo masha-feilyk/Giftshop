@@ -1,0 +1,15 @@
+extends layout/main
+block content
+  // mixin includes
+  include mixins/text-list
+
+  +text([
+    [{
+      mod: 'mod-first',
+      text: 'Amazing pug templates compiled so fast'
+    }],
+    [{
+      mod: 'mod-second',
+      text: 'Text 3'
+    }]
+  ])

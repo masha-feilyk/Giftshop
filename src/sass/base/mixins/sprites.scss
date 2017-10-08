@@ -1,0 +1,20 @@
+$icons: (
+  sprite: (
+    width: 72px,
+    height: 36px,
+    pngPath: '../images/sprite.png',
+    svgPath: '../images/sprite.svg'
+  ),
+  agent_fb: (
+    width: 36px,
+    height: 36px,
+    backgroundX: 0px,
+    backgroundY: 0px
+  ),
+  agent_fb_hov: (
+    width: 36px,
+    height: 36px,
+    backgroundX: -36px,
+    backgroundY: 0px
+  ),
+);

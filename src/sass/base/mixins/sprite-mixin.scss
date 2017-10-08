@@ -1,0 +1,13 @@
+@import "sprites";
+
+@mixin sprite($icon-name) {
+  $icon-name: map-get($icons, $icon-name);
+  $sprite: map-get($icons, sprite);
+  $positionX: round(map-get($icon-name, backgroundX));
+  $positionY: round(map-get($icon-name, backgroundY));
+  width: (map-get($icon-name, width)+1);
+  height: (map-get($icon-name, height)+1);
+  background: url(map-get($sprite, pngPath)) $positionX+1 $positionY + 1 ;
+  background: url(map-get($sprite, svgPath)), url(map-get($sprite, svgPath));
+  background-position: $positionX $positionY;
+}

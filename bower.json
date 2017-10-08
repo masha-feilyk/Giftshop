@@ -1,0 +1,20 @@
+{
+  "name": "code-gulp-skeleton",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Rademade"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Rademade/code-gulp-skeleton",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.2"
+  }
+}

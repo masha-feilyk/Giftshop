@@ -1,0 +1,9 @@
+mixin text(items)
+
+  // BLOCK START
+  div.text
+    ul.text-list
+      each item in items
+        li.text-list-item(class=item[0].mod)= item[0].text
+
+  // BLOCK END
