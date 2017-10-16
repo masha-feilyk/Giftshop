@@ -1,0 +1,22 @@
+mixin product-preview(mod, badgeMod, badgeText, title, description, price)
+
+  a.product-preview-item(class=mod)
+    span.product-preview-badge(class=badgeMod)
+      span.product-preview-badge-text()= badgeText
+
+    span.product-preview-img-holder
+      img.product-preview-img(src="http://placehold.it/370x390")
+    span.product-preview-data
+      span.product-preview-data-title()= title
+      span.product-preview-data-text()= description
+
+    span.product-preview-actions-holder
+      span.product-preview-actions
+        span.product-preview-action.mod-link
+        span.product-preview-action.mod-gift
+        span.product-preview-action.mod-cart
+      span.product-preview-price-holder
+        span.product-preview-currency $
+          span.product-preview-price()= price
+            | .
+            sup 00

@@ -1,0 +1,8 @@
+mixin header-button-list(items)
+
+  // BLOCK START
+  ul.header-button-list
+    each item in items
+      li.header-button-item
+        a.header-button-link(href="#")= item[0].text
+  // BLOCK END

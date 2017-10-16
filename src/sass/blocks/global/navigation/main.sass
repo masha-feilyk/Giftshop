@@ -1,0 +1,37 @@
+.navigation-holder
+  position: relative
+  display: block
+  margin-bottom: 20px
+  z-index: 5
+
+.navigation-list
+  display: block
+  background: #05aecc
+  font-size: 0
+  text-align: center
+
+.navigation-item
+  position: relative
+  display: inline-block
+
+  &:hover
+
+    .navigation-link
+      color: rgb(239, 89, 102)
+      background: #fff
+
+    .navigation-tooltip-holder
+      opacity: 1
+      visibility: visible
+
+
+.navigation-link
+  display: block
+  padding: 28px 21px 25px
+  font-size: rem(16)
+  font-family: $lato-regular
+  line-height: lh(18, 16)
+  letter-spacing: ls(90)
+  color: #fff
+  background: #05aecc
+  transition: color .3s ease, background .3s ease

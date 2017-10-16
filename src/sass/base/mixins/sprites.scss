@@ -1,7 +1,7 @@
 $icons: (
   sprite: (
     width: 72px,
-    height: 36px,
+    height: 50px,
     pngPath: '../images/sprite.png',
     svgPath: '../images/sprite.svg'
   ),
@@ -16,5 +16,17 @@ $icons: (
     height: 36px,
     backgroundX: -36px,
     backgroundY: 0px
+  ),
+  next-arrow: (
+    width: 8px,
+    height: 14px,
+    backgroundX: 0px,
+    backgroundY: -36px
+  ),
+  previous-arrow: (
+    width: 8px,
+    height: 14px,
+    backgroundX: -8px,
+    backgroundY: -36px
   ),
 );

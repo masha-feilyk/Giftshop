@@ -1,0 +1,45 @@
+button
+  display: inline-block
+  outline: none
+  border: 1px solid transparent
+  margin: 0
+  padding: 0
+  cursor: pointer
+
+  &::-moz-focus-inner
+    border: 1px solid transparent
+    padding: 0
+    margin: 0
+
+
+.button-holder
+  display: block
+  width: 100%
+  text-align: center
+
+.button
+  display: inline-block
+  padding: 0 10px
+  font-size: rem(28)
+  font-family: $lato-regular
+  line-height: 60px
+  color: #ffffff
+  border: 1px solid transparent
+  transition: color .3s ease, border-color .3s ease, background-color .3s ease
+
+.button-blue
+  background-color: rgb(5, 174, 204)
+
+  &:hover
+    background-color: #ffffff
+    border-color: rgb(5, 174, 204)
+    color: rgb(5, 174, 204)
+
+.button-register
+  width: 648px
+
+.button-subsribe
+  width: 100%
+  font-size: rem(14)
+  text-transform: uppercase
+

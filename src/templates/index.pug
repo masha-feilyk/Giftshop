@@ -1,15 +1,31 @@
 extends layout/main
 block content
-  // mixin includes
-  include mixins/text-list
 
-  +text([
-    [{
-      mod: 'mod-first',
-      text: 'Amazing pug templates compiled so fast'
-    }],
-    [{
-      mod: 'mod-second',
-      text: 'Text 3'
-    }]
-  ])
+  include blocks/navigation/navigation
+
+  div.content-block
+    include blocks/category-grid
+
+
+  div.content-block
+
+    div.content-title
+      h2.content-title-text New Products
+
+    include blocks/preview/category-list
+
+  div.content-block
+
+    div.content-title
+      h2.content-title-text Featured Products
+
+    include blocks/preview/product-list
+
+  div.content-block
+
+    div.content-title
+      h2.content-title-text Who We Are
+
+    include blocks/about
+
+  div.content-sep

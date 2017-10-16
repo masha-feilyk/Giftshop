@@ -1,0 +1,158 @@
+.product-list-holder
+  display: block
+
+.product-list
+  display: block
+  margin: 0 -12px
+  +clear
+
+.product-list-arrow
+  position: absolute
+  top: -105px
+  width: 70px
+  height: 80px
+  background: #3c3c3c
+  transition: background .3s ease
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    display: block
+    content: ''
+
+  &:hover
+    &.mod-prev,
+    &.mod-next
+      background: #f0626e
+
+  &.mod-next
+    right: 15px
+
+    &:after
+      +sprite(next-arrow)
+
+  &.mod-prev
+    right: 87px
+    &:after
+      +sprite(previous-arrow)
+
+      
+.product-item
+  display: block
+  float: left
+  width: calc(100% / 4)
+  padding: 0 12px
+  box-sizing: border-box
+
+.product-preview-item
+  position: relative
+  display: block
+  border: 1px solid #dddddd
+
+.product-preview-badge
+  position: absolute
+  top: 12px
+  left: 0
+  z-index: 2
+  display: block
+  min-width: 80px
+  padding: 12px 8px 12px 9px
+  text-align: center
+  box-sizing: border-box
+
+  &.mod-red
+    background: #f0626e
+
+    .product-preview-badge-text
+      text-transform: uppercase
+
+
+  &.mod-blue
+    background: #05aecc
+
+.product-preview-badge-text
+  font-size: rem(14)
+  font-family: $lato-regular
+  line-height: lh(16, 14)
+  letter-spacing: ls(90)
+  color: #ffffff
+
+.product-preview-img-holder
+  position: relative
+  display: block
+  width: 100%
+  height: auto
+  padding-bottom: 100%
+  overflow: hidden
+  box-sizing: border-box
+
+.product-preview-img
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+
+.product-preview-data
+  display: block
+  padding: 15px 12px 10px
+  border-bottom: 1px solid #dddddd
+
+.product-preview-data-title
+  display: block
+  font-size: rem(18)
+  font-family: $lato-regular
+  line-height: lh(20, 18)
+  letter-spacing: ls(90)
+  color: #434343
+
+.product-preview-data-text
+  display: block
+  font-size: rem(13)
+  font-family: $lato-regular
+  line-height: lh(15, 13)
+  letter-spacing: ls(90)
+  color: #f0626e
+
+.product-preview-actions-holder
+  display: flex
+
+.product-preview-actions
+  display: block
+  width: 165px
+  font-size: 0
+
+.product-preview-action
+  display: inline-block
+  width: 55px
+  border-right: 1px solid #dddddd
+  box-sizing: border-box
+
+  &.mod-link
+  &.mod-gift
+  &.mod-cart
+
+.product-preview-price-holder
+  display: block
+  padding: 15px 19px 16px 32px
+  background: #f0626e
+
+.product-preview-currency
+  font-size: rem(18)
+  font-family: $lato-regular
+  line-height: lh(20, 18)
+  color: #ffffff
+
+.product-preview-price
+  font-size: rem(20)
+  font-family: $lato-regular
+  line-height: lh(22, 20)
+  color: #ffffff
+
+  sup
+    font-size: rem(16)
+    font-family: $lato-regular
+    line-height: lh(18, 16)
+    color: #ffffff

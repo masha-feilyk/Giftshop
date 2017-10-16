@@ -1,0 +1,16 @@
+mixin badge-data(mod, titleMod, title, price)
+
+  div.badge-data(class=mod)
+    span.badge-data-title(class=titleMod)= title
+    span.badge-data-ico-item.mod-gift
+      i.badge-data-ico.mod-gift
+    span.badge-data-ico-item.mod-cart
+      i.badge-data-ico.mod-cart
+      span.badge-data-ico-tooltip-holder
+        span.badge-data-ico-tooltip
+          span.badge-data-ico-tooltip-text add to cart
+    span.badge-data-price-holder
+      span.badge-data-currency $
+      span.badge-data-price()= price
+        | .
+        sup 00

@@ -1,0 +1,22 @@
+include mixin/product-preview
+
+div.product-list-holder
+
+  ul.product-list.js-product-list
+    li.product-item
+      +product-preview('','mod-red', '20% off', 'Product Title here', 'Short Description here', '99')
+
+    li.product-item
+      +product-preview('','', '', 'Product Title here', 'Short Description here', '99')
+
+    li.product-item
+      +product-preview('mod-new','mod-blue', 'New', 'Product Title here', 'Short Description here', '99')
+
+    li.product-item
+      +product-preview('','', '', 'Product Title here', 'Short Description here', '99')
+
+    li.product-item
+      +product-preview('mod-new','mod-blue', 'New', 'Product Title here', 'Short Description here', '99')
+
+    li.product-item
+      +product-preview('','', '', 'Product Title here', 'Short Description here', '99')

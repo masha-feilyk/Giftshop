@@ -1,0 +1,22 @@
+mixin navigation(items)
+
+  ul.navigation-list
+    each item in items
+      li.navigation-item
+        a.navigation-link(href="#" class="#{item[0].mod}")= item[0].title
+
+        div.navigation-tooltip-holder
+          div.nagivation-tooltip
+
+            ul.navigation-tooltip-list
+
+              -for(var i =0; i<3;i++)
+                li.navigation-tooltip-item
+                  span.navigation-tooltip-link
+                    img.navigation-tooltip-img(src="http://unsplash.it/40")
+                    span.navigation-tooltip-description
+                      span.navigation-tooltip-description-title Item Name Here
+                      span.navigation-tooltip-description-text Lorem Ipsum is simply dummy text of the
+                      a.navigation-tooltip-description-button(href="#") More Detail
+
+            a.navigation-tooltip-button(href="#") See All Items

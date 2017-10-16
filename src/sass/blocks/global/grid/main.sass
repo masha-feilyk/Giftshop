@@ -1,0 +1,77 @@
+.preview-grid
+  display: flex
+  width: 100%
+  margin-bottom: 25px
+
+.preview-list
+  display: block
+  width: 100%
+  max-width: 493px
+
+  &.mod-big
+    flex: 1
+    max-width: 670px
+    padding-right: 5px
+
+    .preview-item
+
+      &:nth-child(1)
+        width: 670px
+        height: 570px
+
+      &:nth-child(2)
+        width: 670px
+        height: 170px
+
+      &:nth-child(3)
+        width: 670px
+        height: 335px
+
+
+.preview-item
+  position: relative
+  display: block
+  width: 100%
+  margin-bottom: 5px
+  z-index: 1
+
+  &:after
+    opacity: 0
+    visibility: hidden
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(20, 34, 81, .87)
+    transition: opacity .3s ease, visibility .3s ease
+
+  &:hover
+
+    &:after
+      opacity: 1
+      visibility: visible
+
+  &:last-child
+    margin-bottom: 0
+
+  &:nth-child(1)
+    width: 494px
+    height: 320px
+
+  &:nth-child(2)
+    width: 494px
+    height: 245px
+
+  &:nth-child(3)
+    width: 494px
+    height: 510px
+
+
+.preview-item-img
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 100%
+  transform: translateY(-50%) translateX(-50%)

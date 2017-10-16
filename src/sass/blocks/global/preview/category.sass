@@ -1,0 +1,62 @@
+.category-list
+  display: block
+  margin: 0 -15px
+  +clear
+
+.category-item
+  display: block
+  float: left
+  width: calc(100% / 3)
+  padding: 0 15px
+  box-sizing: border-box
+
+.category-link
+  display: block
+
+.category-list-arrow
+  position: absolute
+  top: -105px
+  width: 70px
+  height: 80px
+  background: #3c3c3c
+  transition: background .3s ease
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    display: block
+    content: ''
+
+  &:hover
+    &.mod-prev,
+    &.mod-next
+      background: #05aecc
+
+  &.mod-next
+    right: 15px
+
+    &:after
+      +sprite(next-arrow)
+
+  &.mod-prev
+    right: 87px
+    &:after
+      +sprite(previous-arrow)
+
+.category-img-holder
+  position: relative
+  display: block
+  width: 100%
+  height: auto
+  padding-bottom: 55.559%
+  overflow: hidden
+  box-sizing: border-box
+
+.category-img
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: auto

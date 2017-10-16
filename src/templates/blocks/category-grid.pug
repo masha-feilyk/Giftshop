@@ -1,0 +1,27 @@
+include badge/mixin/data
+include badge/mixin/description
+
+div.preview-grid
+
+  div.preview-list.mod-big
+    a.preview-item(href="#")
+      img.preview-item-img(src="http://placehold.it/670x570")
+      +badge-description('','Men’s Wear','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem')
+
+    include search/main
+
+    a.preview-item(href="#")
+      img.preview-item-img(src="http://placehold.it/670x335")
+      +badge-data('', '', 'Craft', '99')
+
+  div.preview-list
+    a.preview-item(href="#")
+      img.preview-item-img(src="http://placehold.it/494x320")
+      +badge-description('mod-small','Women’s Wear','Lorem Ipsum is simply dummy text of the printing and typesetting')
+
+    a.preview-item(href="#")
+      img.preview-item-img(src="http://placehold.it/494x245")
+      +badge-data('mod-bottom', 'mod-bg', 'Baby Shop', '99')
+
+    a.preview-item(href="#")
+      img.preview-item-img(src="http://placehold.it/494x510")

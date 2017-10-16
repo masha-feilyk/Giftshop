@@ -1,0 +1,75 @@
+include mixin/list
+
+footer.footer-holder
+  div.footer
+
+    div.footer-block
+      div.footer-box
+        span.footer-box-title shopping with us
+        ul.footer-list
+          +list([
+            [{href: '#', link: 'why shop with us?'}],
+            [{href: '#', link: 'how it works'}],
+            [{href: '#', link: 'delivery'}],
+            [{href: '#', link: 'returns'}],
+            [{href: '#', link: 'where\'s my order'}],
+            [{href: '#', link: 'contact & help'}],
+            [{href: '#', link: 'wedding list'}],
+            [{href: '#', link: 'wish lists'}],
+            [{href: '#', link: 'gift vouchers'}]
+          ])
+
+      div.footer-box
+        span.footer-box-title about us
+        ul.footer-list
+          +list([
+            [{href: '#', link: 'our story'}],
+            [{href: '#', link: 'customer contact'}],
+            [{href: '#', link: 'awards'}],
+            [{href: '#', link: 'press centre'}],
+            [{href: '#', link: 'work with us'}],
+            [{href: '#', link: 'terms & conditions'}],
+            [{href: '#', link: 'privacy & cookies'}]
+          ])
+
+      div.footer-box
+        span.footer-box-title selling with us
+        ul.footer-list
+          +list([
+            [{href: '#', link: 'why join?'}],
+            [{href: '#', link: 'faqs'}],
+            [{href: '#', link: 'apply to sell with us'}],
+            [{href: '#', link: 'affiliates'}]
+          ])
+
+    div.footer-block.mod-social
+      span.footer-box-title Signup newsletter
+      div.footer-info
+        div.footer-domain e.g.: abc@domain.com
+        button.button.button-blue.button-subsribe Subscribe now
+      div.footer-social
+        span.footer-social-title Keep in touch
+        ul.footer-social-list
+          li.footer-social-item
+            a.footer-social-link.mod-rss(href="#")
+          li.footer-social-item
+            a.footer-social-link.mod-facebook(href="#")
+          li.footer-social-item
+            a.footer-social-link.mod-tweeter(href="#")
+          li.footer-social-item
+            a.footer-social-link.mod-flickr(href="#")
+          li.footer-social-item
+            a.footer-social-link.mod-google(href="#")
+
+
+div.content-sep
+
+div.copyright
+  div.copyright-box
+    span.copyright-text Copyright © 2014 Gift Shop,  All right reserved
+
+  div.copyright-box
+    span.copyright-text Designed by
+    span.copyright-link Amysxain
+
+div.content-sep

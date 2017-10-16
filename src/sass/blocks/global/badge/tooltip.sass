@@ -1,0 +1,55 @@
+.badge-data-ico-tooltip-holder
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  bottom: 100%
+  left: 50%
+  transform: translateX(-50%)
+  width: 111px
+  padding-bottom: 12px
+  box-sizing: border-box
+  transition: opacity .3s ease, visibility .3s ease
+  z-index: 3
+
+  &:before
+    content: ''
+    position: absolute
+    bottom: 5px
+    left: 50%
+    width: 11px
+    height: 11px
+    border: 1px solid #f0626e
+    transform: translateX(-50%) rotate(45deg)
+    z-index: 2
+    border-radius: 2px
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: 7px
+    left: 50%
+    width: 12px
+    height: 13px
+    border: 1px solid transparent
+    background: #fff
+    transform: translateX(-50%) rotate(45deg)
+    z-index: 3
+
+
+.badge-data-ico-tooltip
+  position: relative
+  display: block
+  padding: 8px 10px 10px
+  border-radius: 4px
+  border: 1px solid #f0626e
+  background-color: rgb(255, 255, 255)
+  box-shadow: 0 7px 18px 0 rgba(46, 40, 15, 0.13)
+  box-sizing: border-box
+  text-align: center
+
+.badge-data-ico-tooltip-text
+  display: block
+  font-size: rem(13)
+  font-family: $lato-regular
+  line-height: lh(15, 13)
+  color: #434343

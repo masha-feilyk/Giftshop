@@ -1,0 +1,8 @@
+mixin header-action-list(items)
+
+  // BLOCK START
+  ul.header-action-list
+    each item in items
+      li.header-action-item
+        a.header-action-link(href="#")= item[0].text
+  // BLOCK END

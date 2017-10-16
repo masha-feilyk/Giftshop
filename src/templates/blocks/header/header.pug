@@ -1,0 +1,23 @@
+include mixin/action-list
+include mixin/button-list
+
+header.header
+  div.header-logo-holder
+    img.header-logo(src="../images/blocks/logo.png")
+
+  div.header-actions-holder
+    +header-action-list([
+      [{text: 'Sell'}],
+      [{text: 'Registry'}],
+      [{text: 'Community'}],
+      [{text: 'Blogs'}],
+      [{text: 'Mobile'}],
+      [{text: 'Gift card'}]
+    ])
+
+    +header-button-list([
+      [{text: 'Register'}],
+      [{text: 'Sign in'}],
+      [{text: 'Whishlist'}],
+      [{text: 'Cart'}]
+    ])

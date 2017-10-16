@@ -11,9 +11,10 @@ head
 body
 
   div.wrapper
-    include ../blocks/header
-    block content
-    include ../blocks/footer
+    div.fix
+      include ../blocks/header/header
+      block content
+      include ../blocks/footer/footer
 
   script(src="js/vendor.js")
   script(src="js/application.js")
