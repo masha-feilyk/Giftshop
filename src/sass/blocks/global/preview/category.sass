@@ -11,23 +11,27 @@
   box-sizing: border-box
 
 .category-link
+  position: relative
   display: block
 
 .category-list-arrow
   position: absolute
-  top: -105px
+  top: -107px
   width: 70px
-  height: 80px
+  height: 78px
   background: #3c3c3c
   transition: background .3s ease
 
   &:after
+    content: ''
     position: absolute
     top: 50%
     left: 50%
     transform: translateY(-50%) translateX(-50%)
     display: block
-    content: ''
+    width: 30px
+    height: 30px
+    line-height: lh(30, 25)
 
   &:hover
     &.mod-prev,
@@ -38,12 +42,14 @@
     right: 15px
 
     &:after
-      +sprite(next-arrow)
+      +fa-sprite($fa-var-chevron-right, #fff, 25)
 
   &.mod-prev
     right: 87px
+
     &:after
-      +sprite(previous-arrow)
+      +fa-sprite($fa-var-chevron-left, #fff, 25)
+
 
 .category-img-holder
   position: relative

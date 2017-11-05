@@ -2,7 +2,7 @@
   display: block
   width: 670px
   margin-bottom: 5px
-  padding: 49px 57px
+  padding: 51px 55px 48px 57px
   background: #f0626e
   box-sizing: border-box
 
@@ -14,10 +14,11 @@
   display: block
   width: 100%
   max-width: 484px
-  padding: 23px 29px 24px 27px
+  padding: 23px 29px 23px 27px
   font-size: rem(16)
   font-family: $lato-regular
   line-height: lh(18, 16)
+  letter-spacing: ls(80)
   color: #424242
   box-sizing: border-box
   +placeholder(#424242, 16px)
@@ -28,3 +29,10 @@
   width: 72px
   height: 72px
   background: #f0626e
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 20px
+    transform: translateY(-50%) scale(-1, 1)
+    +fa-sprite($fa-var-search,#fff,58)

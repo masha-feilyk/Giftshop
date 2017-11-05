@@ -1,26 +1,61 @@
 .header-button-list
   display: block
-  margin: 0 -2px
+  width: 100%
+  font-size: 0
+  text-align: right
   background: #f6f6f6
-  +clear
 
 .header-button-item
-  float: left
-  padding: 0 2px
+  display: inline-block
+  padding-right: 4px
+  text-align: center
+
+  &:last-child
+    padding-right: 0
 
   &:nth-child(2n)
 
     .header-button-link
       background: #f0626e
 
+      &:hover
+        background: darken(#f0626e, 5%)
+
 
 .header-button-link
+  position: relative
   display: block
-  padding: 38px 23px 33px 22px
+  min-width: 116px
+  padding: 36px 24px 35px 22px
   font-size: rem(16)
   font-family: $lato-regular
   line-height: lh(18, 16)
   letter-spacing: ls(90)
   color: #fff
   background: #05aecc
+  box-sizing: border-box
+  transition: background .3s ease
 
+  &:hover
+    background: darken(#05aecc, 5%)
+
+  &.mod-gift
+    padding-right: 52px
+
+    &:after
+      position: absolute
+      top: 50%
+      right: 15px
+      transform: translateY(-50%)
+      +fa-sprite($fa-var-gift, #fafafa, 30)
+
+
+  &.mod-cart
+    padding-right: 52px
+
+    &:after
+      position: absolute
+      top: 50%
+      right: 15px
+      transform: translateY(-50%)
+      +fa-sprite($fa-var-shopping-cart, #fafafa, 30)

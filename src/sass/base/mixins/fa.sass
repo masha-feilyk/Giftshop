@@ -1,0 +1,16 @@
+html
+  *:after,
+  *:before
+    visibility: hidden
+
+  &.wf-active
+    *:after,
+    *:before
+      visibility: visible
+
+=fa-sprite($ico,$color,$size)
+  +fa-icon()
+  position: absolute
+  content: $ico
+  color: $color
+  font-size: #{$size}px

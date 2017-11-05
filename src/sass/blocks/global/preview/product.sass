@@ -1,16 +1,17 @@
 .product-list-holder
   display: block
+  width: 100%
 
 .product-list
   display: block
-  margin: 0 -12px
+  margin: 0 -15px
   +clear
 
 .product-list-arrow
   position: absolute
-  top: -105px
+  top: -107px
   width: 70px
-  height: 80px
+  height: 78px
   background: #3c3c3c
   transition: background .3s ease
 
@@ -31,25 +32,35 @@
     right: 15px
 
     &:after
-      +sprite(next-arrow)
+      +fa-sprite($fa-var-chevron-right, #fff, 25)
 
   &.mod-prev
     right: 87px
+
     &:after
-      +sprite(previous-arrow)
+      +fa-sprite($fa-var-chevron-left, #fff, 25)
 
       
 .product-item
   display: block
   float: left
   width: calc(100% / 4)
-  padding: 0 12px
+  padding: 0 15px
   box-sizing: border-box
 
 .product-preview-item
   position: relative
   display: block
   border: 1px solid #dddddd
+
+  &.mod-new
+
+    .product-preview-data-text
+      color: #05aecc
+
+    .product-preview-price-holder
+      background: #05aecc
+
 
 .product-preview-badge
   position: absolute
@@ -58,7 +69,7 @@
   z-index: 2
   display: block
   min-width: 80px
-  padding: 12px 8px 12px 9px
+  padding: 9px 6px 9px 8px
   text-align: center
   box-sizing: border-box
 
@@ -84,7 +95,7 @@
   display: block
   width: 100%
   height: auto
-  padding-bottom: 100%
+  padding-bottom: 108.96%
   overflow: hidden
   box-sizing: border-box
 
@@ -93,11 +104,11 @@
   top: 0
   left: 0
   width: 100%
-  height: auto
+  height: 100%
 
 .product-preview-data
   display: block
-  padding: 15px 12px 10px
+  padding: 12px 12px 10px 13px
   border-bottom: 1px solid #dddddd
 
 .product-preview-data-title
@@ -121,23 +132,74 @@
 
 .product-preview-actions
   display: block
-  width: 165px
+  width: 162px
   font-size: 0
 
 .product-preview-action
   display: inline-block
-  width: 55px
   border-right: 1px solid #dddddd
   box-sizing: border-box
 
+  &:last-child
+    border-right: 0
+
+.product-preview-button
+  position: relative
+  display: block
+  width: 53px
+  height: 50px
+  border: none
+  background: #ffffff
+
+  &:hover
+
+    &:after,
+    &:before
+      color: darken(#b9b9b9, 15%) !important
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    transition: color .3s ease
+
   &.mod-link
+
+    &:after
+      position: absolute
+      top: 14px
+      left: 50%
+      transform: translateX(-50%)
+      +fa-sprite($fa-var-long-arrow-left,#b9b9b9,16)
+
+
+    &:before
+      position: absolute
+      top: 21px
+      left: 50%
+      transform: translateX(-50%)
+      +fa-sprite($fa-var-long-arrow-right,#b9b9b9,16)
+
+
   &.mod-gift
+
+    &:after
+      +fa-sprite($fa-var-gift,#b9b9b9,25)
+
+
   &.mod-cart
+
+    &:after
+      +fa-sprite($fa-var-shopping-cart,#b9b9b9,25)
+
 
 .product-preview-price-holder
   display: block
-  padding: 15px 19px 16px 32px
+  width: calc(100% - 162px)
+  padding: 13px 10px 11px 27px
   background: #f0626e
+  box-sizing: border-box
 
 .product-preview-currency
   font-size: rem(18)
@@ -146,9 +208,9 @@
   color: #ffffff
 
 .product-preview-price
-  font-size: rem(20)
+  font-size: rem(24)
   font-family: $lato-regular
-  line-height: lh(22, 20)
+  line-height: lh(26, 24)
   color: #ffffff
 
   sup

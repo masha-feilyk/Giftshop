@@ -1,0 +1,57 @@
+.bagde-text
+  position: absolute
+  left: 0
+  bottom: 12px
+  display: block
+  padding: 10px 31px 10px 15px
+  font-size: rem(20)
+  font-family: $aparajita
+  font-weight: bold
+  color: #fff
+  text-transform: uppercase
+  background-color: rgba(239, 89, 102, .8)
+  z-index: 3
+
+.badge-tooltip
+  position: absolute
+  bottom: 155px
+  right: -154px
+  transform: rotate(-90deg)
+  display: block
+  padding: 25px 135px 6px 23px
+  background-color: rgba(54, 42, 79, .8)
+  z-index: 3
+
+.badge-tooltip-text
+  display: block
+  font-size: rem(65)
+  line-height: lh(56, 65)
+  font-family: $aparajita
+  color: #ffffff
+  text-transform: uppercase
+
+.badge-tooltip-ico
+  position: absolute
+  bottom: 0
+  right: 18px
+  width: 86px
+  height: 96px
+  background: #ee6470
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: -10px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 0 10px 10px
+    border-color: transparent transparent #c6535d transparent
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+    +fa-sprite($fa-var-check-circle, #fff, 62)

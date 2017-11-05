@@ -11,10 +11,13 @@ mixin product-preview(mod, badgeMod, badgeText, title, description, price)
       span.product-preview-data-text()= description
 
     span.product-preview-actions-holder
-      span.product-preview-actions
-        span.product-preview-action.mod-link
-        span.product-preview-action.mod-gift
-        span.product-preview-action.mod-cart
+      ul.product-preview-actions
+        li.product-preview-action
+          button.product-preview-button.mod-link
+        li.product-preview-action
+          button.product-preview-button.mod-gift
+        li.product-preview-action
+          button.product-preview-button.mod-cart
       span.product-preview-price-holder
         span.product-preview-currency $
           span.product-preview-price()= price

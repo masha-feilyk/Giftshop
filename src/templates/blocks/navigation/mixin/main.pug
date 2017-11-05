@@ -3,7 +3,7 @@ mixin navigation(items)
   ul.navigation-list
     each item in items
       li.navigation-item
-        a.navigation-link(href="#" class="#{item[0].mod}")= item[0].title
+        a.navigation-link(href="#")= item[0].title
 
         div.navigation-tooltip-holder
           div.nagivation-tooltip
